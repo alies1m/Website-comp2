@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script src="https://kit.fontawesome.com/4cf21a4a21.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <nav class="nav-first">
+            <form action="">
+                <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                <input type="text" placeholder="Search">
+            </form>
+            
+            <div class="topnav-centered">
+                <p>Mussa Gamal & Ali Esam</p>
+            </div>
+
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-user" id="user"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-heart" id="heart"></i></a></li>
+                <li><a href="cart.html"><i class="fa-sharp fa-solid fa-cart-shopping" id="cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-second">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="#">CATALOGUE</a></li>
+                <li><a href="#">NEW ARRIVALS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <div class="path">
+        <p><span>Home</span> &nbsp; <span class="grey">/</span> &nbsp; <strong>Cart</strong></p>
+    </div>
+
+    <section class="cart">
+        <table>
+            <tr>
+                <th class="td1">Image</th>
+                <th class="td-product">Product</th>
+                <th class="td-price-2">Price</th>
+                <th class="td-quantity">Quantity</th>
+                <th class="td-total">Total</th>
+                <th class="td-remove">Remove</th>
+            </tr>
+
+            <tr>
+                <td class="td-img"><img src="images/cloth_1.jpg" alt=""></td>
+                <td class="td1"><strong>Top Up T-Shirt</strong></td>
+                <td class="price"><span>$49.00</span></td>
+                <td><form class="quantity-button">
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                        <input type="number" id="number" value="0"/>
+                        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                    </form>
+                </td>
+                <td class="price"><span>$49.00</span></td>
+                <td><a href="#"><button class="button-2">X</button></a></td>
+            </tr>
+
+            <tr>
+                <td class="td-img"><img src="images/cloth_2.jpg" alt=""></td>
+                <td class="td1"><strong>Polo Shirt</strong></td>
+                <td class="price"><span>$49.00</span></td>
+                <td>
+                    <form class="quantity-button">
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                        <input type="number" id="number" value="0"/>
+                        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                    </form>
+                </td>
+                <td class="price"><span>$49.00</span></td>
+                <td><a href="#"><button class="button-2">X</button></a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="bottom-details">
+        <div class="bottom-left">
+            <div class="buttons">
+                <a href="#"><button class="button-update">UPDATE CART</button></a>
+                <a href="shop.html"><button class="button-shopping">CONTINUE SHOPPING</button></a>
+            </div>
+    
+            <div class="coupon">
+                <h3>Coupon</h3>
+                <p>Enter your coupon code if you have one.</p>
+    
+                <form action="">
+                    <input type="text" placeholder="Coupon Code">
+                    <a href="#"><button class="button-coupon">APPLY COUPON</button></a>
+                </form>
+            </div>
+        </div>
+
+        <div class="bottom-right">
+            <h3>CART TOTALS</h3>
+
+            <div class="cart-totals">
+                <div class="subtotal">
+                    <p>Subtotal</p>
+                    <p>$230.00</p>
+                </div>
+    
+                <div class="total">
+                    <p>Total</p>
+                    <p>$230.00</p>
+                </div>
+            </div>
+
+            <div class="checkout-button">
+                <a href="checkout.html"><button class="button-checkout">PROCEED TO CHECKOUT</button></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-details">
+            <div class="col-1">
+                <h4>Navigations</h4>
+            
+                <p class="par"><a href="#">Sell online</a></p>
+                <p class="par"><a href="#">Features</a></p>
+                <p class="par"><a href="#">Shopping cart</a></p>
+                <p class="par"><a href="#">Store builder</a></p>
+            </div>
+    
+            <div class="col-2">
+                <p class="par"><a href="#">Mobile commerce</a></p>
+                <p class="par"><a href="#">Dropshipping</a></p>
+                <p class="par"><a href="#">Website development</a></p>
+            </div>
+    
+            <div class="col-3">
+                <p class="par"><a href="#">Point of sale</a></p>
+                <p class="par"><a href="#">Hardware</a></p>
+                <p class="par"><a href="#">Software</a></p>
+            </div>
+    
+            <div class="col-4">
+                <h4>Promo</h4>
+                <a href="#"><img src="images/hero_1.jpg" alt=""></a>
+                <p class="pp"><span>Finding Your Perfect Shoes</span></p>
+                <p>Promo from January 15 — 25, 2019</p>
+            </div>
+    
+            <div class="col-5">
+                <h4>Contact Info</h4>
+                <p class="par"><i class="fa-sharp fa-solid fa-location-dot" id="location"></i> <span class="p-black">203 Fake St. Mountain View, San Francisco, California, USA</span></p>
+                <p class="par"><i class="fa-solid fa-phone" id="phone"></i> +2 392 3929 210</p>
+                <p class="par"><i class="fa-solid fa-envelope" id="email"></i> <span class="p-black">emailaddress@domain.com</span></p>
+                <h4 class="subscribe">Subscribe</h4>
+                
+                <div class="email-input">
+                    <form action="">
+                        <input type="email" placeholder="Email">
+                        <a href="#"><button class="button-1">SEND</button></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <p class="end">Copyright ©2021 All rights reserved | This template is made with <i class="fa-sharp fa-solid fa-heart"></i> by <span>Mussa Gamal & Ali Esam</span></p>
+    </footer>
+
+
+
+
+
+    <script>
+        function increaseValue() {
+            var value = 
+        parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number').value = value;
+            }
+
+        function decreaseValue() {
+            var value = 
+        parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number').value = value;
+        }
+    </script>
+</body>
+</html>
